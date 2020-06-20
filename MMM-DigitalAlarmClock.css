@@ -1,4 +1,11 @@
-@import url(//db.onlinewebfonts.com/c/1467e2d37ec60cc50117a8db7c24f626?family=DS-Digital);
+/* @import url(//db.onlinewebfonts.com/c/1467e2d37ec60cc50117a8db7c24f626?family=DS-Digital); */
+
+
+@font-face {font-family: "DS-Digital";
+    
+    src: url('fonts/@font-face/63f874d192fb3892d88d5e26f942b5e2.woff2') format('woff2');
+    
+}
 
 @-webkit-keyframes blink {
   0% { opacity: 0; }
@@ -48,7 +55,7 @@
   to { text-shadow: 0 0 50px #0084ff; }
 }
 
-.MMM-DigitalAlarmClock {
+.MMM-DigitalAlarmClock { 
   color: #ff0900;	/* #0084ff - digital blue, #ff0900 - digital red, #00d960 - digital green, #ffffff - bright white */
   width: 400px;
   font-family: DS-Digital;
@@ -62,6 +69,8 @@
   padding: 0;
   overflow: hidden;
   align-items: center;
+  -webkit-filter: var(--drop_shadow);
+    filter: var(--drop_shadow);
 }
 
 .MMM-DigitalAlarmClock .date {
@@ -70,7 +79,7 @@
   font-family: DS-Digital;
   text-align: center;
   letter-spacing: 5px;
-  font-weight: 600;
+  
 }
 
 .MMM-DigitalAlarmClock .time {
@@ -79,7 +88,7 @@
   line-height: 85%;
   letter-spacing: 5px;
   font-family: DS-Digital;
-  font-weight: bolder;
+  font-weight: normal;
   text-align: center;
 }
 
@@ -92,7 +101,7 @@
   line-height: 105%;
   font-family: DS-Digital;
   letter-spacing: 3px;
-  font-weight: bold;
+  font-weight: normal;
 }
 
 .MMM-DigitalAlarmClock .alarm {
@@ -129,4 +138,141 @@
   border: 2px solid;
   border-radius: 12px;
   vertical-align: middle;
+}
+
+/*touch Alarm */
+.MMM-DigitalAlarmClock-set {
+  color: #ff0900;	/* #0084ff - digital blue, #ff0900 - digital red, #00d960 - digital green, #ffffff - bright white */
+  width: 400px;
+  font-family: DS-Digital;
+  position: relative;
+  height: 270px;
+  box-shadow: 0px 0px 2px white;
+  margin: 0 auto;
+  border-radius: 50px;
+  background-color: #101010;
+  border: 25px inset #333;
+  padding: 0;
+  overflow: hidden;
+  align-items: center;
+  top: 600px;
+}
+
+.MMM-DigitalAlarmClock .display-set-alarm-time {
+    margin-left: 15px;
+}
+
+.MMM-DigitalAlarmClock-modal {
+    position: fixed;
+    text-align: left;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.MMM-DigitalAlarmClock-modal.bordered {
+    border: 1px solid white;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+.MMM-DigitalAlarmClock-blur {
+    -webkit-filter: blur(2px) brightness(50%);
+    filter: blur(2px) brightness(50%);
+}
+
+.settime-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.settime-container .cell {
+    flex-grow: 1;
+    text-align: center;
+    width: 45%;
+}
+
+.settime-container .middle-cell {
+    width: 10%;
+    line-height: 70px;
+    font-size: 50px;
+}
+
+.settime-container .button-cell {
+    height: 50px;
+}
+
+.settime-container .number-cell {
+    line-height: 70px;
+    font-size: 50px;
+}
+
+.settime-container button {
+    height: 100%;
+    width: 80%;
+
+    border: 1px solid white;
+    border-radius: 15px;
+    background-color: black;
+    color: #aaa;
+
+    font-size: 30px;
+}
+
+.settime-container .button-ok {
+    margin-top: -4px;
+    line-height: 50px;
+    margin-left: 35px;
+}
+
+.alarm-container {
+    text-align: center;
+}
+
+.alarm-container .close-container {
+    text-align: right;
+    margin-top: -20px;
+    margin-right: -10px;
+}
+
+.alarm-container .close-icon {
+    /* Empty */
+}
+
+.alarm-container i.alarm {
+    width: 100%;
+    font-size: 75px;
+}
+
+.alarm-container .alarm-time {
+    width: 100%;
+    font-size: 100px;
+    margin-top: 50px;
+}
+
+.alarm-container button {
+    height: 100%;
+    width: 100%;
+
+    border: 1px solid white;
+    border-radius: 15px;
+    background-color: black;
+    color: #aaa;
+
+    font-size: 30px;
+}
+
+.alarm-container .button-snooze {
+    width: 100%;
+    margin-top: 50px;
+    line-height: 50px;
+}
+
+.settime-container .checkbox-SunCheck{
+    margin-top: 10px;
+    line-height: 1px;
+    margin-left: 20px;
 }

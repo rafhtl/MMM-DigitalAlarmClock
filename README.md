@@ -4,14 +4,14 @@ This module is a combination of the digital part of the default MM<sup>2</sup> c
 
 ## Screenshots
 
-![ScreenShot for Alarm Set](https://github.com/justjim1220/MMM-DigitalAlarmClock/blob/master/Screenshot%20(1).png)
-![ScreenShot for Alarm Not Set](https://github.com/justjim1220/MMM-DigitalAlarmClock/blob/master/Screenshot%20(2).png)
+![ScreenShot for Alarm Set](https://github.com/rafhtl/MMM-DigitalAlarmClock/blob/master/Screenshot%20(1).png)
+![ScreenShot for Alarm Not Set](https://github.com/rafhtl/MMM-DigitalAlarmClock/blob/master/Screenshot%20(2).png)
 
 ## Installing this module:
 
 $ cd MagicMirror<br>
 $ cd modules<br>
-$ git clone https://github.com/justjim1220/MMM-DigitalAlarmClock.git<br>
+$ git clone https://github.com/rafhtl/MMM-DigitalAlarmClock.git<br>
 $ cd MMM-DigitalAlarmClock<br>
 $ npm i<br>
 
